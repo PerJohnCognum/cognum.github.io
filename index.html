@@ -16,10 +16,14 @@
     .hero {
       position: relative;
       width: 100%;
-      height: 300px;
-      background: url('assets/hero.jpg') center/cover no-repeat;
+      height: auto;
     }
-    .hero img.logo {
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .hero-logo {
       position: absolute;
       top: 1rem;
       left: 1rem;
@@ -45,7 +49,7 @@
       font-size: 1.2rem;
     }
     .portfolio-item {
-      background: linear-gradient(135deg, #5b8ded, #3b6fcc);
+      background: linear-gradient(145deg, #5b8ded, #3b6fdc);
       color: #fff;
       padding: 1rem;
       font-weight: bold;
@@ -58,12 +62,11 @@
       overflow-wrap: break-word;
       word-wrap: break-word;
       min-height: 3.5rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
     }
     .portfolio-item:hover {
       transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
     .contact {
       margin-top: 3rem;
@@ -77,18 +80,18 @@
       color: #fff;
     }
     @media (max-width: 600px) {
-      .hero img.logo {
+      .hero-logo {
         max-width: 120px;
-      }
-      main {
-        padding: 0 1rem;
+        top: 0.8rem;
+        left: 0.8rem;
       }
     }
   </style>
 </head>
 <body>
   <div class="hero">
-    <img src="assets/cognum-logo.png" alt="Cognum logo" class="logo">
+    <img src="assets/hero.jpg" alt="Hero banner">
+    <img src="assets/cognum-logo.png" alt="Cognum logo" class="hero-logo">
   </div>
   <main>
     <p>Our main focus is digital products, growth and scaling, customer focus, processes and business models.</p>
