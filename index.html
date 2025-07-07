@@ -5,75 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cognum</title>
   <style>
-    :root {
-      --bg: #fdfdfd;
-      --text: #1c1c1c;
-      --accent: #6c88c4;
-    }
-
     body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       margin: 0;
-      padding: 24px 16px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-size: 17px;
-      line-height: 1.65;
-      color: var(--text);
-      background-color: var(--bg);
-      -webkit-font-smoothing: antialiased;
+      padding: 0;
+      line-height: 1.4;
+      background: #fdfdfc;
+      color: #222;
     }
-
     header {
+      padding: 2rem 1rem 1rem;
       text-align: center;
-      margin-bottom: 28px;
     }
-
     header img {
-      max-height: 70px;
+      max-width: 160px;
       height: auto;
     }
-
     main {
-      max-width: 700px;
-      margin: 0 auto;
+      padding: 0 1rem;
+      max-width: 680px;
+      margin: auto;
     }
-
-    main p {
-      white-space: pre-line;
+    p {
+      margin: 0.8rem 0;
     }
-
-    @media (min-width: 768px) {
-      body {
-        font-size: 18px;
-        padding: 48px 32px;
-      }
-
+    .portfolio, .contact {
+      margin-top: 3rem;
+    }
+    .portfolio ul {
+      padding-left: 1rem;
+    }
+    footer {
+      margin-top: 4rem;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      background: #f1f1f1;
+    }
+    @media (max-width: 600px) {
       header img {
-        max-height: 80px;
+        max-width: 120px;
+      }
+      main {
+        padding: 0 1rem;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="assets/cognum-logo.png" alt="Cognum logo" />
+    <img src="assets/cognum-logo.png" alt="Cognum logo">
   </header>
-
   <main>
-    <p>
-Our main focus is digital products, growth and scaling, customer focus, processes and business models.
+    <p>Our main focus is digital products, growth and scaling, customer focus, processes and business models.</p>
+    <p>We are especially strong in building engagement with customers, employees and partners and as drivers of change.</p>
+    <p>Cognum´s investment focus is on the founding team. We have few requirements on industry, but we excel with platform- and service business models, enterprise software and creative industries.</p>
+    <p>Our home market is uniquely positioned to lead digitalization of industries. Norway is the new oil.</p>
+    <p>Sometimes we seek out opportunities in industries, geographies and technologies that are new to us. Explorative initiatives are undertaken to gain exposure to Africa and select European markets. At the moment hardware-enabled services and space are areas of special interest.</p>
+    <p>Owner Per John Thorenfeldt is an entrepreneurial, hands-on, growth executive with a proven track record through founding, executive, board and advisory roles within consumer tech, financial services, enterprise services and more. International industry experience from mobile, IT, Internet-of-Things, online services, retail, banking, payment and insurance.</p>
 
-We are especially strong in building engagement with customers, employees and partners and as drivers of change.
+    <section class="portfolio">
+      <h2>Portfolio Highlights</h2>
+      <ul>
+        <li>Huddly</li>
+        <li>Bember</li>
+        <li>Roest Coffee</li>
+        <li>Workday INC</li>
+        <li>Oivi</li>
+        <li>Nomono</li>
+        <li>Drylab Media Tech PLC</li>
+        <li>Carmimari</li>
+        <li>Hotel Online</li>
+        <li>Cake it easy</li>
+        <li>Coright</li>
+        <li>Sharefox</li>
+        <li>ELM Designkollektiv</li>
+      </ul>
+    </section>
 
-Cognum´s investment focus is on the founding team. We have few requirements on industry, but we excel with platform- and service business models, enterprise software and creative industries.
- 
-Our home market is uniquely positioned to lead digitalization of industries. Norway is the new oil.
- 
-Sometimes we seek out opportunities in industries, geographies and technologies that are new to us. Explorative initiatives are undertaken to gain exposure to Africa and select European markets. At the moment hardware-enabled services and space are areas of special interest.
- 
-Owner Per John Thorenfeldt is an entrepreneurial, hands-on, growth executive with a proven track record through founding, executive, board and advisory roles within consumer tech, financial services, enterprise services and more. International industry experience from mobile, IT, Internet-of-Things, online services, retail, banking, payment and insurance.
-    </p>
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:perjohn@cognum.no">perjohn@cognum.no</a></p>
+    </section>
   </main>
-
+  <footer>
+    &copy; 2025 Cognum AS
+  </footer>
 </body>
 </html>
