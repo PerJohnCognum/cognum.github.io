@@ -13,30 +13,16 @@
       background: #fdfdfc;
       color: #222;
     }
-    .hero {
-      position: relative;
-      background: url("assets/hero.jpg") center/cover no-repeat;
-      height: 300px;
+    header {
+      padding: 2rem 1rem 1rem;
+      text-align: center;
     }
-    .hero img {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
+    header img {
       max-width: 160px;
       height: auto;
     }
     main {
-      padding: 0;
-      margin: 0;
-    }
-    .section {
-      padding: 2rem 1rem;
-    }
-    .section-background {
-      background: #f5f7fb;
-      width: 100%;
-    }
-    .section-inner {
+      padding: 0 1rem;
       max-width: 680px;
       margin: auto;
     }
@@ -44,19 +30,16 @@
       margin: 0.8rem 0;
     }
     .portfolio {
-      margin-top: 3rem;
-      margin-bottom: 3rem;
+      margin-top: 2rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       gap: 1rem;
-      padding: 0 1rem;          /* keep grid aligned with text */
-      max-width: 680px;         /* matches text width */
-      margin-left: auto;
-      margin-right: auto;
     }
     .portfolio h2 {
       grid-column: 1 / -1;
       font-size: 1.2rem;
+      color: #444;
+      margin-top: 0;
     }
     .portfolio-item {
       background: #5b8ded;
@@ -72,18 +55,17 @@
       overflow-wrap: break-word;
       word-wrap: break-word;
       min-height: 3.5rem;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .portfolio-item:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
     .contact {
       margin-top: 3rem;
-      padding: 0 1rem;
-      max-width: 680px;
-      margin-left: auto;
-      margin-right: auto;
+    }
+    .contact h2 {
+      font-size: 1.2rem;
+      color: #444;
+      margin-top: 1.5rem;
+    }
+    .contact p {
+      font-size: 1.1rem;
     }
     footer {
       margin-top: 4rem;
@@ -94,42 +76,29 @@
       color: #fff;
     }
     @media (max-width: 600px) {
-      .hero img {
+      header img {
         max-width: 120px;
       }
-      .footer-linebreak {
-        display: block;
+      main {
+        padding: 0 1rem;
       }
-      .contact-bg {
-        padding-top: 1rem; /* reduce top padding on mobile as well */
-      }
-    }
-
-    /* Reduce top padding above Contact */
-    .contact-bg {
-      padding-top: 1rem; /* half of default 2rem */
-    }
-      .footer-linebreak {
-        display: block;
+      .contact h2 {
+        margin-top: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="hero">
+  <header>
     <img src="assets/cognum-logo.png" alt="Cognum logo">
-  </div>
+  </header>
   <main>
-    <section class="section section-background contact-bg">
-      <div class="section-inner">
-        <p>Our main focus is digital products, growth and scaling, customer focus, processes and business models.</p>
-        <p>We are especially strong in building engagement with customers, employees and partners and as drivers of change.</p>
-        <p>Cognum´s investment focus is on the founding team. We have few requirements on industry, but we excel with platform- and service business models, enterprise software and creative industries.</p>
-        <p>Our home market is uniquely positioned to lead digitalization of industries. Norway is the new oil.</p>
-        <p>Sometimes we seek out opportunities in industries, geographies and technologies that are new to us. Explorative initiatives are undertaken to gain exposure to Africa and select European markets. At the moment hardware-enabled services and space are areas of special interest.</p>
-        <p>Owner Per John Thorenfeldt is an entrepreneurial, hands-on, growth executive with a proven track record through founding, executive, board and advisory roles within consumer tech, financial services, enterprise services and more. International industry experience from mobile, IT, Internet-of-Things, online services, retail, banking, payment and insurance.</p>
-      </div>
-    </section>
+    <p>Our main focus is digital products, growth and scaling, customer focus, processes and business models.</p>
+    <p>We are especially strong in building engagement with customers, employees and partners and as drivers of change.</p>
+    <p>Cognum´s investment focus is on the founding team. We have few requirements on industry, but we excel with platform- and service business models, enterprise software and creative industries.</p>
+    <p>Our home market is uniquely positioned to lead digitalization of industries. Norway is the new oil.</p>
+    <p>Sometimes we seek out opportunities in industries, geographies and technologies that are new to us. Explorative initiatives are undertaken to gain exposure to Africa and select European markets. At the moment hardware-enabled services and space are areas of special interest.</p>
+    <p>Owner Per John Thorenfeldt is an entrepreneurial, hands-on, growth executive with a proven track record through founding, executive, board and advisory roles within consumer tech, financial services, enterprise services and more. International industry experience from mobile, IT, Internet-of-Things, online services, retail, banking, payment and insurance.</p>
 
     <section class="portfolio">
       <h2>Portfolio Highlights</h2>
@@ -147,17 +116,15 @@
       <div class="portfolio-item">ELM Designkollektiv</div>
     </section>
 
-    <section class="section section-background">
-      <div class="section-inner contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:perjohn@cognum.no">perjohn@cognum.no</a></p>
-        <p>Phone: +47 900 83 108</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/perjohn/" target="_blank">https://www.linkedin.com/in/perjohn/</a></p>
-      </div>
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:perjohn@cognum.no">perjohn@cognum.no</a></p>
+      <p>Phone: +47 900 83 108</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/perjohn/" target="_blank">https://www.linkedin.com/in/perjohn/</a></p>
     </section>
   </main>
-  <footer>
-    © 2025 Cognum AS • Oslo, Norway<span class="footer-linebreak"> • Org.nr 914 457 815</span>
-  </footer>
+<footer>
+  © 2025 Cognum AS • Oslo, Norway • Org.nr 914 457 815
+</footer>
 </body>
 </html>
