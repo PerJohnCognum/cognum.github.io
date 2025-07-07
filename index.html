@@ -21,6 +21,14 @@
       max-width: 160px;
       height: auto;
     }
+    .hero {
+      width: 100%;
+      height: 320px;
+      background: url('assets/hero.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     main {
       padding: 0 1rem;
       max-width: 680px;
@@ -32,7 +40,7 @@
     .portfolio {
       margin-top: 3rem;
       display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       gap: 1rem;
     }
     .portfolio h2 {
@@ -40,7 +48,7 @@
       font-size: 1.2rem;
     }
     .portfolio-item {
-      background: #5b8ded;
+      background: linear-gradient(135deg, #5b8ded, #3b6dd0);
       color: #fff;
       padding: 1rem;
       font-weight: bold;
@@ -53,6 +61,12 @@
       overflow-wrap: break-word;
       word-wrap: break-word;
       min-height: 3.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .portfolio-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     }
     .contact {
       margin-top: 3rem;
@@ -79,6 +93,9 @@
   <header>
     <img src="assets/cognum-logo.png" alt="Cognum logo">
   </header>
+
+  <div class="hero"></div>
+
   <main>
     <p>Our main focus is digital products, growth and scaling, customer focus, processes and business models.</p>
     <p>We are especially strong in building engagement with customers, employees and partners and as drivers of change.</p>
@@ -107,11 +124,12 @@
       <h2>Contact</h2>
       <p>Email: <a href="mailto:perjohn@cognum.no">perjohn@cognum.no</a></p>
       <p>Phone: +47 900 83 108</p>
-     <p>LinkedIn: <a href="https://www.linkedin.com/in/perjohn/" target="_blank">https://www.linkedin.com/in/perjohn/</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/perjohn/" target="_blank">https://www.linkedin.com/in/perjohn/</a></p>
     </section>
   </main>
-<footer>
-  © 2025 Cognum AS • Oslo, Norway • Org.nr 914 457 815
-</footer>
+
+  <footer>
+    © 2025 Cognum AS • Oslo, Norway • Org.nr 914 457 815
+  </footer>
 </body>
 </html>
