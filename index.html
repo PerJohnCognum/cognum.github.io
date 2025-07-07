@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <title>Cognum</title>
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <!-- Hero image: Photo by Jahanzeb Ahsan on Unsplash -->
   <style>
     body {
@@ -112,12 +115,24 @@
       color: #fff;
       text-decoration: none;
       white-space: nowrap;
-    } 
+    }
 
     @media (max-width: 600px) {
+      .logo-overlay,
       header img {
         max-width: 120px;
       }
+      main {
+        padding: 0 1rem;
+      }
+      .portfolio {
+        padding: 0 1rem;
+      }
+      .org-line {
+        display: block;
+        margin-top: 0.2rem;
+      }
+    }
       main {
         padding: 0 1rem;
       }
