@@ -32,7 +32,7 @@
     .portfolio {
       margin-top: 3rem;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       gap: 1rem;
     }
     .portfolio h2 {
@@ -40,12 +40,19 @@
       font-size: 1.2rem;
     }
     .portfolio-item {
-      background: #e6f2ff;
+      background: #5b8ded;
+      color: #fff;
       padding: 1rem;
-      text-align: center;
       font-weight: bold;
       font-size: 1.1rem;
       border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      min-height: 3.5rem;
     }
     .contact {
       margin-top: 3rem;
@@ -55,7 +62,8 @@
       padding: 1rem;
       text-align: center;
       font-size: 0.9rem;
-      background: #f1f1f1;
+      background: #2563eb;
+      color: #fff;
     }
     @media (max-width: 600px) {
       header img {
@@ -99,10 +107,10 @@
       <h2>Contact</h2>
       <p>Email: <a href="mailto:perjohn@cognum.no">perjohn@cognum.no</a></p>
       <p>Phone: +47 900 83 108</p>
-     <p>LinkedIn: <a href="https://www.linkedin.com/in/perjohn/" target="_blank">linkedin.com/in/perjohn/</a></p>
+     <p>LinkedIn: <a href="https://www.linkedin.com/in/perjohn/" target="_blank">https://www.linkedin.com/in/perjohn/</a></p>
     </section>
   </main>
-<footer style="background:#2563eb;color:#fff;text-align:center;padding:1rem;font-size:0.9rem;">
+<footer>
   © 2025 Cognum AS • Oslo, Norway • Org.nr 914 457 815
 </footer>
 </body>
