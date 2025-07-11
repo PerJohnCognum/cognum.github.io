@@ -89,7 +89,10 @@
       transform: scale(1.03);
     }
     .contact {
-      margin-top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
     .contact h2 {
       font-size: 1.2rem;
@@ -102,6 +105,7 @@
     footer {
       margin-top: 4rem;
       padding: 1rem;
+      text-align: center;
       font-size: 0.9rem;
       background: #2563eb;
       color: #fff;
@@ -165,29 +169,29 @@
   <div class="section-wrapper">
     <main>
       <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:perjohn@cognum.no">perjohn@cognum.no</a></p>
-        <p>Phone: +47 900 83 108</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/company/cognumas/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/company/cognumas/</a></p>
+        <div>
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:perjohn@cognum.no">perjohn@cognum.no</a></p>
+          <p>Phone: +47 900 83 108</p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/company/cognumas/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/company/cognumas/</a></p>
+        </div>
+        <a href="https://www.linkedin.com/company/cognumas/" target="_blank" rel="noopener noreferrer" style="margin-left: auto;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#2563eb" viewBox="0 0 24 24" aria-label="LinkedIn" style="vertical-align: middle;">
+            <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 
+            0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 20h-2.5v-10h2.5v10zm-1.25-11.25c-.828 
+            0-1.5-.672-1.5-1.5s.672-1.5 
+            1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 
+            1.5zm13 11.25h-2.5v-5.5c0-1.1-.9-2-2-2s-2 
+            .9-2 2v5.5h-2.5v-10h2.5v1.5c.73-1.05 
+            2.15-1.5 3.5-1.5 2.21 0 4 1.79 4 4v6z"/>
+          </svg>
+        </a>
       </section>
     </main>
   </div>
 
   <footer>
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-      <p>© 2025 Cognum AS • Oslo, Norway • <span class="org-line">Org.nr 914 457 815</span></p>
-      <a href="https://www.linkedin.com/company/cognumas/" target="_blank" rel="noopener noreferrer" style="margin-left: auto;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24" aria-label="LinkedIn" style="vertical-align: middle;">
-          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 
-          0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 20h-2.5v-10h2.5v10zm-1.25-11.25c-.828 
-          0-1.5-.672-1.5-1.5s.672-1.5 
-          1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 
-          1.5zm13 11.25h-2.5v-5.5c0-1.1-.9-2-2-2s-2 
-          .9-2 2v5.5h-2.5v-10h2.5v1.5c.73-1.05 
-          2.15-1.5 3.5-1.5 2.21 0 4 1.79 4 4v6z"/>
-        </svg>
-      </a>
-    </div>
+    <p>© 2025 Cognum AS • Oslo, Norway • <span class="org-line">Org.nr 914 457 815</span></p>
   </footer>
 </body>
 </html>
